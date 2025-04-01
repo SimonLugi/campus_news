@@ -1,42 +1,60 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+body{
   margin: 0;
+  padding: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+:root{
+  /* Secondary Colors */
+  --flat-secondary: #e74c3c; /* Red */
+  --flat-secondary-dark: #c0392b; /* Dark Red */
+  --flat-secondary-light: #f1948a; /* Light Red */
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  /* Success */
+  --flat-success: #2ecc71; /* Green */
+  --flat-success-dark: #27ae60; /* Dark Green */
+  --flat-success-light: #58d68d; /* Light Green */
+
+  /* Warning */
+  --flat-warning: #f39c12; /* Yellow */
+  --flat-warning-dark: #e67e22; /* Dark Yellow */
+  --flat-warning-light: #f9e79f; /* Light Yellow */
+
+  /* Info */
+  --flat-info: #1abc9c; /* Teal */
+  --flat-info-dark: #16a085; /* Dark Teal */
+  --flat-info-light: #48c9b0; /* Light Teal */
+
+  /* Neutral */
+  --flat-neutral: #95a5a6; /* Gray */
+  --flat-neutral-dark: #7f8c8d; /* Dark Gray */
+  --flat-neutral-light: #bdc3c7; /* Light Gray */
+
+  --primmary1: #ffa500;
+  --primmary2: #ba7d0d;
+  --primmary3: #ae7714;
+  --primmary4: #9c7123;
+  --primmary5: #8a692c;
+  --primmary6: #6a542a;
+  --primmary7: #604d2d;
+  --primmary8: #392f1d;
+  --primmary9: #272015;
+  --primmary10: #231e13;
+  --primmary11: #000000;
+  --primmary12: #202020;
+  --primmary13: #454545;
+  --primmary14: #636363;
+  --primmary15: #919191;
+  --primmary16: #bfbfbf;
+  --primmary17: #e1dddd;
+  --primmary18: #ffffff;
+  --primmary-text: var(--primmary18);
+  --primmary-background: var(--primmary12) ;
+  --border-radius:15px;
 }

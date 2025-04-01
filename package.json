@@ -3,19 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next dev\"",
+    "build": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next build\"",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next start\"",
+    "lint": "next lint",
+    "lint-watch": "nodemon --watch . --exec next lint",
+    "server": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "concurrently": "^9.1.2",
+    "json-server": "^1.0.0-beta.3",
+    "next": "15.2.4",
+    "nodemon": "^3.1.9",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.4"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "eslint": "^9",
-    "eslint-config-next": "15.2.4",
-    "@eslint/eslintrc": "^3"
+    "eslint": "9.23.0",
+    "eslint-config-next": "15.2.4"
   }
 }

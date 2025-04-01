@@ -1,0 +1,12 @@
+{
+  "navigation": [
+    { "name": "Home", "link": "/" },
+    { "name": "Login", "link": "/login" }
+  ],
+  "settings": {
+    "enableLogin": true,
+    "settingsUrl": "/settings.html",
+    "loginUrl": "/login.html",
+    "navbarcount": 5
+  }
+}

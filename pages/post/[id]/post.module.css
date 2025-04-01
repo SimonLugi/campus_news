@@ -1,0 +1,27 @@
+.postContent{
+    background-color: var(--primmary17);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 5%;
+    padding: 1%;
+    border-radius: var(--border-radius);
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    background-color: var(--primmary1);
+    color: var(--primmary-text);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    aspect-ratio: 2/1;
+    width: 100px;
+}

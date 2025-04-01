@@ -1,0 +1,86 @@
+{
+  "posts": [
+    {
+      "title": "The underestimated taste of lukewarm water",
+      "text": "Everyone talks about ice-cold or boiling hot water, but what about lukewarm? It's somehow... just there. Neither refreshing nor soothing, but reliable. Maybe we should pay more attention to it.",
+      "userId": 1,
+      "id": 1,
+      "createdAt": "2025-01-08T11:35:45.961Z",
+      "updatedAt": "2025-01-08T11:38:06.374Z"
+    },
+    {
+      "title": "IPA",
+      "text": "The IPA (Individual Practical Work) season for computer science and mediamatics specialists is in full swing. Some projects have already been completed, while others are still in the starting blocks, ready to demonstrate to their experts the skills they have developed over the past few years.",
+      "userId": 1,
+      "id": 2,
+      "createdAt": "2025-01-09T11:35:45.961Z",
+      "updatedAt": "2025-01-09T11:37:51.711Z"
+    },
+    {
+      "title": "Insight into the basic training",
+      "text": "The application developers in the basic training are currently taking the 'Frontend Development' module. It is one of the more complex modules in the training and builds on the previous teaching sequences. Participants can now demonstrate that they have acquired comprehensive basic knowledge.",
+      "userId": 1,
+      "id": 3,
+      "createdAt": "2025-01-10T11:35:45.961Z",
+      "updatedAt": "2025-01-10T11:37:37.310Z"
+    },
+    {
+      "title": "App in Cloud",
+      "text": "The final inter-company course (üK) will be the App-in-Cloud module. The application developers and platform developers must draw on their complete knowledge of the two separate modules and can only take this course together. Are they worthy of the second year of training?",
+      "userId": 1,
+      "id": 4,
+      "createdAt": "2025-01-11T11:35:45.961Z",
+      "updatedAt": "2025-01-11T11:37:19.605Z"
+    },
+    {
+      "title": "ICT-Campus @ tunBern",
+      "text": "The ICT Campus is representing Swiss Post at the tunBern career fair. The experts from the basic training program have created an exciting program and are looking forward to passing on their enthusiasm for ICT to the next generation.",
+      "userId": 1,
+      "id": 5,
+      "createdAt": "2025-01-12T11:35:45.961Z",
+      "updatedAt": "2025-01-12T11:37:08.262Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "userId": 1,
+      "postId": 1,
+      "text": "Toller Beitrag! Danke, dass ihr alles auf englisch schreibt. So kann ich mein Englisch verbessern.",
+      "createdAt": "2025-02-11T09:51:48.975Z",
+      "updatedAt": "2025-02-11T14:56:42.167Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "postId": 1,
+      "text": "Hi there everyone! I want to greet my fellow students, teachers and my mom. I hope you all have a great day!",
+      "createdAt": "2025-02-14T16:01:15.738Z",
+      "updatedAt": "2025-02-14T16:01:15.738Z"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "postId": 2,
+      "text": "Test. Funktioniert die Kommentarfunktion?",
+      "createdAt": "2022-02-14T16:11:36.578Z",
+      "updatedAt": "2022-02-14T16:11:36.578Z"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "postId": 3,
+      "text": "These application developers are incredibly tough guys. I have the utmost respect for them.",
+      "createdAt": "2025-02-14T16:13:24.165Z",
+      "updatedAt": "2025-02-14T16:13:24.165Z"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@admin.ch",
+      "password": "$2a$10$YkFbz7nkfUtM64tKLMfPme2IOwuBEVCWXcGv75NP6BEdeV94eQ/TG",
+      "name": "Adam Admin",
+      "id": 1
+    }
+  ]
+}
