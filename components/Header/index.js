@@ -8,16 +8,18 @@ export default function Header(){
     return(
         <header className={styles.navigation}>
             <LogoContainer />
-            <Nav />
+            <Nav/>
         </header>
     )
 }
 
 function LogoContainer(){
     return(
-        <div className={styles.logocontainer}>
-            <img src="./logo_campus_news.png" alt="asdfashb" />
+        <div className={styles.logoaligmentcontainer}>
+        <Link className={styles.logocontainer} href={"/"}>
+            <img src="./logo_campus_news.png" alt="Logo" />
             <h1>Campus News</h1>
+        </Link>
         </div>
     )
 }
@@ -26,7 +28,10 @@ function Nav(){
     return(
         <nav className={styles.navContainer}>
             <ul className={styles.navList}>
-                <NavItem />
+                <li className={styles.navItem}>
+                    <i className="fa-solid fa-bars"></i>
+                </li>
+                <NavItem/>
             </ul>
         </nav>
     )

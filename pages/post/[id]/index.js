@@ -1,30 +1,52 @@
 import PostsAPI from "../../../lib/api/Posts";
 import Link from "next/link";
 import styles from './post.module.css'
+import CommentsAPI from "../../../lib/api/Comments";
 
-export default function DetailPost({post}) {
+export default function DetailPost({post,comments}) {
 
     return !post ? null : (
-        <div className={styles.postContent}>
-            <div>
-                <h1>{post.title}</h1>
-                <p>{post.text}</p>
-                <p><i>Erstellt am {post.createdAt}</i></p>
+        <>
+            <div className={styles.postContent}>
+                <div>
+                    <h1>{post.title}</h1>
+                    <p>{post.text}</p>
+                    <p><i>Erstellt am {post.createdAt}</i></p>
+                </div>
+                <div className={styles.buttonContainer}>
+                    <Link className={styles.button} href={`/`}><i className="fa-solid fa-arrow-left"></i>Back</Link>
+                    <Link className={styles.button} href={`/`}>Edit<i className="fa-solid fa-pen"></i></Link>
+                </div>
             </div>
-            <div className={styles.buttonContainer}>
-                <Link className={styles.button} href={`/`}><i className="fa-solid fa-arrow-left"></i>Back</Link>
-                <Link className={styles.button} href={`/`}>Edit<i className="fa-solid fa-pen"></i></Link>
+            <div className={styles.commentsContent}>
+                {comments.map(comment =>{
+                    if(comment.postId == post.id){
+                        return(
+                            <div className={styles.comment} key={comment.id}>
+                                <div className={styles.user}>
+                                    <img className={styles.userimg} src={""}/> {/*Will be filled*/}
+                                    <h4>{"username"}</h4>
+                                </div>
+                                <p>{comment.text}</p>
+                                <div className={styles.commentTimes}>
+                                    <p>{comment.createdAt}</p>
+                                    <p>{comment.updatedAt}</p>
+                                </div>
+                            </div>
+                        )
+                    }
+                })}
             </div>
-
-        </div>
+        </>
     )
 }
 
 
 export async function getStaticProps({params}) {
     const post = await PostsAPI.read(params.id);
+    const comments = await CommentsAPI.readAll()
     return {
-        props: { post }, revalidate: 10
+        props: { post,comments }, revalidate: 10
     }
 }
 

@@ -2,6 +2,7 @@
     background-color: var(--primmary17);
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 80%;
     margin: 5%;
     padding: 1%;
@@ -10,12 +11,12 @@
 .buttonContainer{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 .button{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin: 2%;
     background-color: var(--primmary1);
@@ -24,4 +25,35 @@
     text-decoration: none;
     aspect-ratio: 2/1;
     width: 100px;
+}
+.commentsContent{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: var(--border-radius);
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primmary17);
+    border-radius: var(--border-radius);
+    padding: 1%;
+    margin: 5%;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.commentTimes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.commentTimes>p{
+    margin-right: 1%;
+    color: var(--primmary1);
 }
