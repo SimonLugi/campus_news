@@ -1,12 +1,14 @@
 {
   "navigation": [
     { "name": "Home", "link": "/" },
-    { "name": "Login", "link": "/login" }
+    { "name": "Login", "link": "/login" },
+    { "name": "Profile", "link": "/profile" },
+    { "name": "Create", "link": "post/create/" }
   ],
   "settings": {
     "enableLogin": true,
     "settingsUrl": "/settings.html",
-    "loginUrl": "/login.html",
+    "loginUrl": "/login",
     "navbarcount": 5
   }
 }

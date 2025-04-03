@@ -1,5 +1,5 @@
 .postContent{
-    background-color: var(--primmary17);
+    background-color: var(--primary17);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -11,16 +11,17 @@
 .buttonContainer{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .button{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 2%;
-    background-color: var(--primmary1);
-    color: var(--primmary-text);
+    background-color: var(--primary1);
+    color: var(--primary-text);
     border-radius: var(--border-radius);
     text-decoration: none;
     aspect-ratio: 2/1;
@@ -36,7 +37,7 @@
 .comment{
     display: flex;
     flex-direction: column;
-    background-color: var(--primmary17);
+    background-color: var(--primary17);
     border-radius: var(--border-radius);
     padding: 1%;
     margin: 5%;
@@ -47,6 +48,9 @@
     align-items: center;
     justify-content: flex-start;
 }
+.styles.text{
+    text-overflow: ellipsis;
+}
 .commentTimes{
     display: flex;
     flex-direction: row;
@@ -55,5 +59,5 @@
 }
 .commentTimes>p{
     margin-right: 1%;
-    color: var(--primmary1);
+    color: var(--primary1);
 }

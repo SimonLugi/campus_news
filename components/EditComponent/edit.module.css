@@ -1,0 +1,71 @@
+.form{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.postContent{
+    background-color: var(--primary17);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    aspect-ratio: 3/1;
+    padding: 1%;
+    border-radius: var(--border-radius);
+}
+.titleInput{
+    width: 98%;
+    border-radius:var(--border-radius) var(--border-radius) 0 0;
+    background-color: var(--primary13);
+    border:none;
+    font-family: var(--font);
+    font-size: 2em;
+    padding: 1%;
+    color: var(--primary1);
+}
+.titleInput:focus{
+    outline: none;
+}
+.textAerea{
+    width: 98%;
+    aspect-ratio: 3/1;
+    resize: none;
+    background-color: var(--primary16);
+    border:none;
+    font-family: var(--font);
+    color: var(--primary-text);
+    font-size: 1em;
+    padding: 1%;
+}
+.textAerea:focus{
+    outline: none;
+}
+.subbmit{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary1);
+    color: var(--primary-text);
+    border:none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    text-decoration: none;
+    height: 10%;
+    width: 100%;
+}
+.subbmit:active{
+    background-color: var(--primary2);
+}
+.save{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary2);
+    color: var(--primary-text);
+    border:none;
+    text-decoration: none;
+    height: 10%;
+    width: 100%;
+}
+.save:active{
+    background-color: var(--primary3);
+}

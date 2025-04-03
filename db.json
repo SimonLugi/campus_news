@@ -2,48 +2,56 @@
   "posts": [
     {
       "title": "The underestimated taste of lukewarm water",
-      "text": "Everyone talks about ice-cold or boiling hot water, but what about lukewarm? It's somehow... just there. Neither refreshing nor soothing, but reliable. Maybe we should pay more attention to it.",
+      "text": "Everyone talks about ice-cold or boiling hot water, but what about lukewarm? It's somehow... just there. Neither refreshing nor soothing, but reliable. Maybe we should pay more attention to it.\n\nLukewarm water doesn’t shock your system like ice water does. It doesn’t demand caution like boiling water. It simply exists, a quiet companion to our daily lives. It’s the kind of water you absentmindedly drink while working, the sip you take when you don’t even realize you’re thirsty.\n\nSome might call it bland, uninspiring, even disappointing. But lukewarm water is adaptable. It blends seamlessly into whatever you mix it with—tea, coffee, or a hydration routine that doesn’t require bracing yourself for a temperature jolt. It doesn’t overshadow flavors like ice does, nor does it steal attention like steaming hot water.\n\nThere’s a kind of quiet comfort in it. Athletes know it hydrates better than cold water. Singers appreciate its gentleness on their vocal cords. Some cultures even value its role in digestion and relaxation. Lukewarm water doesn’t ask for praise, yet it serves its purpose in ways we rarely acknowledge.\n\nMaybe it’s time we start appreciating it—not for what it lacks, but for what it offers. A steady, unassuming presence. A reminder that sometimes, the best things in life don’t have to be extreme.",
       "userId": 1,
-      "id": 1,
+      "id": "1",
       "createdAt": "2025-01-08T11:35:45.961Z",
-      "updatedAt": "2025-01-08T11:38:06.374Z"
+      "updatedAt": "2025-04-02T13:05:56.712Z"
     },
     {
       "title": "IPA",
       "text": "The IPA (Individual Practical Work) season for computer science and mediamatics specialists is in full swing. Some projects have already been completed, while others are still in the starting blocks, ready to demonstrate to their experts the skills they have developed over the past few years.",
       "userId": 1,
-      "id": 2,
+      "id": "2",
       "createdAt": "2025-01-09T11:35:45.961Z",
-      "updatedAt": "2025-01-09T11:37:51.711Z"
+      "updatedAt": "2025-04-02T14:13:51.373Z"
     },
     {
       "title": "Insight into the basic training",
       "text": "The application developers in the basic training are currently taking the 'Frontend Development' module. It is one of the more complex modules in the training and builds on the previous teaching sequences. Participants can now demonstrate that they have acquired comprehensive basic knowledge.",
       "userId": 1,
-      "id": 3,
+      "id": "3",
       "createdAt": "2025-01-10T11:35:45.961Z",
       "updatedAt": "2025-01-10T11:37:37.310Z"
     },
     {
-      "title": "App in Cloud",
-      "text": "The final inter-company course (üK) will be the App-in-Cloud module. The application developers and platform developers must draw on their complete knowledge of the two separate modules and can only take this course together. Are they worthy of the second year of training?",
+      "title": "App in Cloud Some How",
+      "text": "The final inter-company course (üK) will be the App-in-Cloud module. The application developers and platform developers must draw on their complete knowledge of the two separate modules and can only take this course together. Are they worthy of the second year of training?\n\n\n\nI added some text",
       "userId": 1,
-      "id": 4,
+      "id": "4",
       "createdAt": "2025-01-11T11:35:45.961Z",
-      "updatedAt": "2025-01-11T11:37:19.605Z"
+      "updatedAt": "2025-04-02T13:04:11.158Z"
     },
     {
       "title": "ICT-Campus @ tunBern",
       "text": "The ICT Campus is representing Swiss Post at the tunBern career fair. The experts from the basic training program have created an exciting program and are looking forward to passing on their enthusiasm for ICT to the next generation.",
       "userId": 1,
-      "id": 5,
+      "id": "5",
       "createdAt": "2025-01-12T11:35:45.961Z",
-      "updatedAt": "2025-01-12T11:37:08.262Z"
+      "updatedAt": "2025-04-03T06:22:42.883Z"
+    },
+    {
+      "title": "Tell Mike about Pre Rendering",
+      "text": "Warum Pre-Rendering absolut nötig ist!\nVorteile des Pre-Renderings in Next.js\nDas Pre-Rendering in Next.js optimiert die Ladegeschwindigkeit einer Webseite erheblich. Durch das Vorab-Generieren der HTML-Seiten auf dem Server werden die Inhalte schneller ausgeliefert, was zu einer besseren Performance und User Experience führt.\nWarum ist Pre-Rendering vorteilhaft?\n1.\tKompatibilität mit Geräten ohne JavaScript\nWebseiten, die serverseitig gerendert werden, funktionieren auch auf Geräten oder Browsern, die JavaScript nicht oder nur eingeschränkt ausführen können. Dadurch wird die Zugänglichkeit erhöht.\n2.\tBessere Indexierung durch Suchmaschinen\nSuchmaschinen-Crawler erhalten eine vollständige, gerenderte Version der Webseite, was die SEO-Optimierung verbessert. Seiteninhalte können so effizienter indexiert werden.\n3.\tOptimierte Performance auf Low-End-Geräten\nDa ein Großteil der Verarbeitung bereits serverseitig erfolgt, müssen leistungsschwache Geräte weniger Rechenleistung für das Rendering aufbringen. Dies verbessert die Ladezeiten und sorgt für eine flüssigere Benutzererfahrung.\nZusätzlicher Vorteil: SEO & Social Media Previews\nNeben der besseren Indexierung durch Google profitieren auch Social-Media-Previews davon, da Plattformen wie Facebook oder Twitter auf statische HTML-Inhalte zugreifen können, um Vorschauen korrekt anzuzeigen.\nZusammenfassend:\nNext.js bietet mit Pre-Rendering eine leistungsfähige Methode, um sowohl die Performance, SEO als auch die Zugänglichkeit einer Webseite zu verbessern. Dies führt zu einer besseren Nutzererfahrung und einer höheren Sichtbarkeit in Suchmaschinen.\n",
+      "userId": "1",
+      "id": "25b9",
+      "createdAt": "2025-04-02T14:11:34.000Z",
+      "updatedAt": "2025-04-03T06:56:14.509Z"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "postId": 1,
       "text": "Toller Beitrag! Danke, dass ihr alles auf englisch schreibt. So kann ich mein Englisch verbessern.",
@@ -51,7 +59,7 @@
       "updatedAt": "2025-02-11T14:56:42.167Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "postId": 1,
       "text": "Hi there everyone! I want to greet my fellow students, teachers and my mom. I hope you all have a great day!",
@@ -59,7 +67,7 @@
       "updatedAt": "2025-02-14T16:01:15.738Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 1,
       "postId": 2,
       "text": "Test. Funktioniert die Kommentarfunktion?",
@@ -67,7 +75,7 @@
       "updatedAt": "2022-02-14T16:11:36.578Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 1,
       "postId": 3,
       "text": "These application developers are incredibly tough guys. I have the utmost respect for them.",
@@ -80,7 +88,7 @@
       "email": "admin@admin.ch",
       "password": "$2a$10$YkFbz7nkfUtM64tKLMfPme2IOwuBEVCWXcGv75NP6BEdeV94eQ/TG",
       "name": "Adam Admin",
-      "id": 1
+      "id": "1"
     }
   ]
 }

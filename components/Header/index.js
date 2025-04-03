@@ -9,6 +9,7 @@ export default function Header(){
         <header className={styles.navigation}>
             <LogoContainer />
             <Nav/>
+            <MobileNav />
         </header>
     )
 }
@@ -17,8 +18,8 @@ function LogoContainer(){
     return(
         <div className={styles.logoaligmentcontainer}>
         <Link className={styles.logocontainer} href={"/"}>
-            <img src="./logo_campus_news.png" alt="Logo" />
-            <h1>Campus News</h1>
+            <img src="/logo_campus_news.png" alt="Logo" />
+            <h1 className={styles.title}>Campus News</h1>
         </Link>
         </div>
     )
@@ -28,14 +29,24 @@ function Nav(){
     return(
         <nav className={styles.navContainer}>
             <ul className={styles.navList}>
-                <li className={styles.navItem}>
-                    <i className="fa-solid fa-bars"></i>
-                </li>
                 <NavItem/>
             </ul>
         </nav>
     )
 }
+function MobileNav(){
+    return(
+        <div className={styles.mobileNavContainerContainer}>
+            <i className={`fa fa-bars ${styles.bars}`} aria-hidden="true"></i>
+            <nav className={styles.mobileNavContainer}>
+                <ul className={styles.mobileNavList}>
+                    <NavItem/>
+                </ul>
+            </nav>
+        </div>
+    )
+}
+
 function NavItem() {
     return (
         navItemList.map(item => (

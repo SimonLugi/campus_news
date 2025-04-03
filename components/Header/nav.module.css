@@ -5,7 +5,12 @@
     box-shadow: 0px 1px 17px 0px #000000;
     position: sticky;
     z-index: 10;
-    background-color: var(--primmary-background);
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.title{
+    transition: font-size 1s;
 }
 .logoaligmentcontainer{
     position: absolute;
@@ -23,13 +28,20 @@
     z-index: 100;
     pointer-events: all;
     text-decoration: none;
-    color: var(--primmary-text);
+    color: var(--primary-text);
 }
 .logocontainer>img{
     height: -webkit-fill-available;
     width: auto;
 }
+
+@media (prefers-color-scheme: dark) {
+    .logocontainer>img{
+        filter: contrast(0.01);
+    }
+}
 .navContainer{
+    visibility: visible;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
@@ -52,7 +64,7 @@
     border-radius: var(--border-radius);
 }
 .navItem:hover{
-    background-color: var(--primmary2);
+    background-color: var(--primary2);
 }
 .navLink{
     display: flex;
@@ -60,22 +72,54 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: var(--primmary12);
+    color: var(--primary12);
     height: 60px;
     width: 100px;
     margin-left: 10px;
 }
 @media screen and (max-width: 720px) {
     .navContainer{
-        overflow: hidden;
+        display: none;
     }
-    .navList{
-        background-color: var(--primmary-background);
+    .mobileNavContainerContainer{
+        display: flex!important;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+}
+.mobileNavContainerContainer{
+    width: 20%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.mobileNavContainerContainer:hover .mobileNavContainer{
+    visibility: visible;
+}
+.mobileNavContainer{
+    visibility: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.bars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: var(--border-radius);
+}
+.mobileNavList{
+        background-color: var(--primary-background);
         display: flex;
         flex-direction: column;
         align-items: center;
         margin:0;
         padding: 0 5%;
         border-radius: 0 0 0 var(--border-radius);
-    }
 }

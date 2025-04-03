@@ -3,3 +3,10 @@
     grid-template-columns: 50% 50%;
     width: 100%;
 }
+@media screen and (max-width: 950px) {
+    .postContainer{
+        display: flex!important;
+        flex-direction: column;
+        width:100%;
+    }
+}

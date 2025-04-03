@@ -2,8 +2,9 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-  color: var(--primmary-text);
+  font-family: var(--font);
+  color: var(--primary-text);
+  background-color: var(--primary-background);
 }
 main{
   display: flex;
@@ -37,25 +38,57 @@ main{
   --flat-neutral-dark: #7f8c8d; /* Dark Gray */
   --flat-neutral-light: #bdc3c7; /* Light Gray */
 
-  --primmary1: #ffa500;
-  --primmary2: #ba7d0d;
-  --primmary3: #ae7714;
-  --primmary4: #9c7123;
-  --primmary5: #8a692c;
-  --primmary6: #6a542a;
-  --primmary7: #604d2d;
-  --primmary8: #392f1d;
-  --primmary9: #272015;
-  --primmary10: #231e13;
-  --primmary11: #000000;
-  --primmary12: #202020;
-  --primmary13: #454545;
-  --primmary14: #636363;
-  --primmary15: #919191;
-  --primmary16: #bfbfbf;
-  --primmary17: #e1dddd;
-  --primmary18: #ffffff;
-  --primmary-text: var(--primmary12);
-  --primmary-background: var(--primmary18) ;
   --border-radius:15px;
+  --font:-apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root{
+    --primary1: #ffa500;
+    --primary2: #ba7d0d;
+    --primary3: #ae7714;
+    --primary4: #9c7123;
+    --primary5: #8a692c;
+    --primary6: #6a542a;
+    --primary7: #604d2d;
+    --primary8: #392f1d;
+    --primary9: #272015;
+    --primary10: #231e13;
+    --primary11: #000000;
+    --primary12: #202020;
+    --primary13: #454545;
+    --primary14: #636363;
+    --primary15: #919191;
+    --primary16: #bfbfbf;
+    --primary17: #e1dddd;
+    --primary18: #ffffff;
+    --primary-text: var(--primary12);
+    --primary-background: var(--primary18) ;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary1: #004bff;   /* Deep Dark Blue */
+    --primary2: #0024cd;   /* Dark Blue */
+    --primary3: #003ecc;   /* Vivid Blue */
+    --primary4: #1e63f2;   /* Electric Blue */
+    --primary5: #3b82f6;   /* Bright Sky Blue */
+    --primary6: #60a5fa;   /* Soft Sky Blue */
+    --primary7: #93c5fd;   /* Light Blue */
+    --primary8: #bfdfff;   /* Soft Pale Blue */
+    --primary9: #e0f2fe;   /* Almost White Blue */
+    --primary10: #f0f9ff;  /* Off-White Blue */
+    --primary11: #d1d5db;  /* Light Gray Blue */
+    --primary12: #9ca3af;  /* Muted Gray Blue */
+    --primary13: #6b7280;  /* Slate Gray */
+    --primary14: #505b6e;  /* Charcoal Blue */
+    --primary15: #40444a;  /* Dark Gray Blue */
+    --primary16: #35393f;  /* Dark Slate Blue */
+    --primary17: #25272b;  /* Very Dark Blue */
+    --primary18: #1a1c1f;  /* Almost Black Blue */
+    --primary-text: var(--primary9);
+    --primary-background: var(--primary18);
+  }
+
 }
