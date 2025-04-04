@@ -36,8 +36,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .logocontainer>img{
-        filter: contrast(0.01);
+    .logo{
+        filter: invert(1);
     }
 }
 .navContainer{

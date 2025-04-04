@@ -8,7 +8,8 @@
     "start": "concurrently --kill-others \"npm run server\" \"npm run lint-watch\" \"next start\"",
     "lint": "next lint",
     "lint-watch": "nodemon --watch . --exec next lint",
-    "server": "json-server-auth --watch db.json -r routes.json --port 3001"
+    "server": "json-server-auth --watch db.json -r routes.json --port 3001",
+    "cypress:open": "cypress:open"
   },
   "dependencies": {
     "concurrently": "^9.1.2",
@@ -22,6 +23,7 @@
     "react-toastify": "^11.0.5"
   },
   "devDependencies": {
+    "cypress": "^14.2.1",
     "eslint": "9.23.0",
     "eslint-config-next": "15.2.4"
   }

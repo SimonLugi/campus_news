@@ -3,10 +3,12 @@ import PostsAPI from "../../../../lib/api/Posts";
 import styles from "./edit.module.css"
 import Link from "next/link";
 import {router} from "next/client";
+import {useGlobalContext} from "@/store";
 
 export default function Edit({post}) {
+    const {session} = useGlobalContext()
     const handleDeletePost = async () => {
-        await PostsAPI.delete(post.id)
+        await PostsAPI.delete(post.id,session.accesToken)
         await router.push('/');
     }
 

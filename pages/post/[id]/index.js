@@ -1,15 +1,16 @@
-import PostsAPI from "../../../lib/api/Posts";
+import PostsAPI from "@/lib/api/Posts";
 import Link from "next/link";
 import styles from './post.module.css'
-import CommentsAPI from "../../../lib/api/Comments";
+import CommentsAPI from "@/lib/api/Comments";
+import {useGlobalContext} from "@/store";
 
 export default function DetailPost({post,comments}) {
-
+    const {session} = useGlobalContext()
     return !post ? null : (
         <>
             <div className={styles.buttonContainer}>
                 <Link className={styles.button} href={`/`}><i className="fa-solid fa-arrow-left"></i>Back</Link>
-                <Link className={styles.button} href={`./edit/${post.id}`}>Edit<i className="fa-solid fa-pen"></i></Link>
+                {session && <Link className={styles.button} href={`./edit/${post.id}`}>Edit<i className="fa-solid fa-pen"></i></Link>}
             </div>
             <div className={styles.postContent}>
                     <h1>{post.title}</h1>

@@ -1,4 +1,4 @@
-import jwtDecode from "jwt-decode"
+import { jwtDecode } from 'jwt-decode';
 import { createContext, useContext, useEffect, useState } from "react"
 
 const STORAGE_KEY = "session"
@@ -21,6 +21,7 @@ const useSession = () => {
     useEffect(() => {
         if (!window) return
         const session = JSON.parse(localStorage.getItem(STORAGE_KEY))
+        console.log(session)
 
         if (session !== null) {
             const { exp } = jwtDecode(session.accessToken)

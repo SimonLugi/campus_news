@@ -1,8 +1,11 @@
+import {useGlobalContext} from "@/store";
+
 import styles from './nav.module.css'
 import config from './links.json'
 import Link from "next/link";
 
 const navItemList = config.navigation
+let filterdList = config.navigation
 
 export default function Header(){
     return(
@@ -18,7 +21,7 @@ function LogoContainer(){
     return(
         <div className={styles.logoaligmentcontainer}>
         <Link className={styles.logocontainer} href={"/"}>
-            <img src="/logo_campus_news.png" alt="Logo" />
+            <img className={styles.logo} src="/logo.svg" alt="Logo" />
             <h1 className={styles.title}>Campus News</h1>
         </Link>
         </div>
@@ -26,33 +29,52 @@ function LogoContainer(){
 }
 
 function Nav(){
+    const { session, logout } = useGlobalContext()
     return(
         <nav className={styles.navContainer}>
             <ul className={styles.navList}>
                 <NavItem/>
+                { session && <li className={styles.navItem}>
+                    <Link href="/login" className={styles.navLink} onClick={logout}>Logout</Link>
+                </li>
+                }
             </ul>
         </nav>
     )
 }
 function MobileNav(){
+    const { session, logout } = useGlobalContext()
     return(
         <div className={styles.mobileNavContainerContainer}>
             <i className={`fa fa-bars ${styles.bars}`} aria-hidden="true"></i>
             <nav className={styles.mobileNavContainer}>
                 <ul className={styles.mobileNavList}>
                     <NavItem/>
+                    { session && <li className={styles.navItem}>
+                        <Link href="/login" className={styles.navLink} onClick={logout}>Logout</Link>
+                    </li>
+                    }
                 </ul>
             </nav>
         </div>
     )
 }
 
+
 function NavItem() {
+    const { session} = useGlobalContext()
+
+    if (!session){
+        filterdList = navItemList.filter(navItemList => navItemList.name !== "Profile")
+    }else {
+        filterdList = navItemList.filter(navItemList => navItemList.name !== "Login")
+    }
     return (
-        navItemList.map(item => (
-            <li className={styles.navItem} key={item.name}>
-                <Link href={item.link} className={styles.navLink}>{item.name}</Link>
-            </li>
-        ))
+        filterdList.map(item => (
+                    <li className={styles.navItem} key={item.name}>
+                        <Link href={item.link} className={styles.navLink}>{item.name}</Link>
+                    </li>
+                )
+        )
     );
 }
