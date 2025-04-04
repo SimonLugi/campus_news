@@ -65,16 +65,17 @@ function NavItem() {
     const { session} = useGlobalContext()
 
     if (!session){
-        filterdList = navItemList.filter(navItemList => navItemList.name !== "Profile")
+        filterdList = navItemList.filter(navItem => navItem.name !== "Profile" && navItem.name !== "Create");
+        filterdList.push({ name: "Create", link: "/login" });
     }else {
-        filterdList = navItemList.filter(navItemList => navItemList.name !== "Login")
+        filterdList = navItemList.filter(navItem => navItem.name !== "Login");
     }
     return (
         filterdList.map(item => (
-                    <li className={styles.navItem} key={item.name}>
-                        <Link href={item.link} className={styles.navLink}>{item.name}</Link>
-                    </li>
-                )
+                <li className={styles.navItem} key={item.name}>
+                    <Link href={item.link} className={styles.navLink}>{item.name}</Link>
+                </li>
+            )
         )
     );
 }

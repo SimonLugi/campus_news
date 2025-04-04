@@ -9,7 +9,7 @@ export default function Home({posts}){
           <Head>
               <title> | Campus News</title>
           </Head>
-          <h1>Home Site</h1>
+          <h1 className={styles.title}>Home Site</h1>
           <div className={styles.postContainer} >
           {posts.map(item => {
               return(
